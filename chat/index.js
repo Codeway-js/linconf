@@ -36,7 +36,7 @@ async function initChat() {
 
 async function sendtext(textId) {
     for (let i = 0; i < text[textId].length; i++) {
-        await sleep(text[textId][i].length * 10)
+        await sleep(text[textId][i].length * 100)
         sendMessage(text[textId][i]);
     }
 }
